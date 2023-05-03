@@ -26,3 +26,23 @@ const arrowRight = document.querySelector("#arrowRight");
 arrowRight.addEventListener("click", () => {
 	console.log("droite");
 })
+
+const dots = document.querySelector(".dots");
+dots.addEventListener("click", () => {
+	console.log("1");
+})
+
+let dot;
+let index = 0;
+let numberDot;
+dots.classList.add("dots");
+
+for (let i = 0; slides.length > i; i++) {
+	dot = document.createElement("span");
+	dots.append(dot);
+	dot.classList.add("dot");
+	dot.classList.add(i);
+	numberDot = document.querySelectorAll(".dot");
+}
+
+numberDot[0].classList.add("dot_selected");
